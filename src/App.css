@@ -1,0 +1,39 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+   /* background-image: url("../public/images/body-bg.png"); */
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../public/fonts/Poppins-Regular.ttf");
+}
+
+.container{
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+ 
+}
+
+
+.main-page{
+display: flex;
+flex: 1;
+ background-image: url("../public/images/body-bg.png");
+ background-size: cover;
+ background-position: center;
+}
+
+.sidebar{
+  display: flex;
+  flex:0.21
+}
+
+.outlet{
+  display: flex;
+  flex:0.79;
+ 
+}
