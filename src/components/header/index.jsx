@@ -4,7 +4,7 @@ const Index = () => {
   return (
     <>
       <header className="header">
-        {/* <div className="container"> */}
+        <div className="container">
           <div className="header_section">
             <div className="header_menu">
               <a href="/">
@@ -30,7 +30,7 @@ const Index = () => {
                 </a>
               </li>
             </ul>
-          {/* </div> */}
+          </div>
         </div>
       </header>
     </>

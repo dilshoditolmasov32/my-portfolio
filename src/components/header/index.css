@@ -1,6 +1,10 @@
 header {
   background-color: #1b1b1b;
   border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+  left: 0;
+  right: 0;
+  position: fixed;
+  
 }
 
 .header_section {

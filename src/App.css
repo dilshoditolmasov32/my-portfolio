@@ -25,6 +25,7 @@ flex: 1;
  background-image: url("../public/images/body-bg.png");
  background-size: cover;
  background-position: center;
+ padding-top: 70px;
 }
 
 .sidebar{

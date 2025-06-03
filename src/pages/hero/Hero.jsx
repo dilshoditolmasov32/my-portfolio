@@ -1,8 +1,9 @@
 import { next } from "../../../public/images";
-import "./index.css";
-const Index = () => {
+import "./Hero.css";
+
+const Hero = () => {
   return (
-    <div className="hero-page">
+     <div className="hero-page">
       <div className="hero-page__block">
         <h1>
           Assalomu alaykum, Men <span>Itolmasov Dilshodbek</span>man
@@ -20,7 +21,8 @@ const Index = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Index;
+export default Hero
+
