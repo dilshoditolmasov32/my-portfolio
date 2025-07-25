@@ -1,13 +1,11 @@
 .left_sidebar {
-  width: 300px;
+  width: 320px;
   height: 100vh;
   padding: 14px;
   background-color: rgb(22, 22, 22);
   position: fixed;
   left: 0;
-  /* top: 60px; */
   overflow-y: scroll;
-
 }
 
 .sidebar-btns {
@@ -36,26 +34,30 @@
 }
 
 .about_btns {
-  display: grid;
-  grid-template-columns: auto;
-  row-gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .about_btns button {
-  padding: 6px 3px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 6px;
   border-radius: 6px;
   cursor: pointer;
+  color: #fff;
 }
 
 .profile_section h1 {
   text-align: center;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 24px;
   text-align: center;
   color: #fff;
   text-align: left;
-  margin: 8px 0;
+  margin-top: 8px;
+  margin-bottom: 12px;
 }
 .social_network_section {
   margin: 20px 0;
@@ -110,4 +112,23 @@
 }
 .icon_card-4 {
   background: rgba(0, 200, 83, 0.25);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(16, 17, 16);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(51, 186, 107, 0.5);
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 1040px) {
+  .left_sidebar {
+    transform: translateX(-100%);
+  }
 }

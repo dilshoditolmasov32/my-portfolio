@@ -2,7 +2,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import App from "../App"
 import Hero from "../pages/hero/Hero"
 import About from "../pages/about/About"
-import Contact from "../pages/contact"
+import Contact from "../pages/contact/Contact"
 import Projects from "../pages/projects"
 const Index = () => {
   const router=createBrowserRouter(

@@ -1,6 +1,14 @@
-  import { gmail, github2, menuBar } from "../../../public/images";
+import { useState } from "react";
+import Sidebar from "../sidebar"
+import { gmail, github2, menuBar } from "../../../public/images";
 import "./index.css";
 const Index = () => {
+  const [hamburgerMenu, setHamburgerMenu] = useState(false);
+
+  const handleClick=()=>{
+     setHamburgerMenu(!hamburgerMenu)
+  }
+
   return (
     <>
       <header className="header">
@@ -30,11 +38,16 @@ const Index = () => {
                 </a>
               </li>
             </ul>
+
+            <button className="hamburger-menu" onClick={handleClick}>
+              <img src={menuBar} alt="hamburger menu" width={24} height={24} />
+            </button>
           </div>
         </div>
+        <Sidebar hamburgerMenu={hamburgerMenu} setHamburgerMenu={setHamburgerMenu}/>
       </header>
     </>
   );
 };
 
-export default Index
+export default Index;

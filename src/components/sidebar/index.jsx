@@ -9,7 +9,8 @@ import {
   telegram,
 } from "../../../public/images";
 import "./index.css"
-const Index = () => {
+const Index = (props) => {
+ 
   return (
     <>
 

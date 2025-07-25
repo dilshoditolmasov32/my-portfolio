@@ -21,6 +21,9 @@ import webSearch from "./web-search.svg"
 import diamond from "./diamond.svg"
 import penTool from "./pen-tool.svg"
 import time from "./time.svg"
+import gmail2 from "./gmail2.png"
+import telegram2 from "./telegram2.png"
+import phone2 from "./phone2.png"
 
 
-export {gmail, github,github2, Dilshodbey, call, telegram, leftIcon, rightIcon, refreshIcon, menuBar, next, html, css, js, react, figma, swiper, tailwandcss, ant,  webSearch,diamond, penTool, time  }
+export {gmail, github,github2, Dilshodbey, call, telegram, leftIcon, rightIcon, refreshIcon, menuBar, next, html, css, js, react, figma, swiper, tailwandcss, ant,  webSearch,diamond, penTool, time, gmail2, telegram2, phone2  }

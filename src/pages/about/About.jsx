@@ -22,15 +22,19 @@ const About = () => {
         <h2>Men haqimda</h2>
         <div className="line__block"></div>
         <p>
-          Men Itolmasov Dilshodbek, veb dasturchiman. Yoshim 21da, Qashqadaryo
-          viloyati Kasbi tumanida tug'ilganman. Qiziqarli, ko'p funksiyalarga
-          ega va kuchli dizaynga ega dasturlar yaratishga qiziqaman.
+          Men Itolmasov Dilshodbek, Junior Fronted React.Js dasturchiman. Yoshim
+          21da, Qashqadaryo viloyati Kasbi tumanida tug'ilganman.Hozirgi kunda
+          Toshkent axborot texnologiyalar universitetida 3-bosqichida tahsil
+          olaman. Najot ta'limning Frontend React.Js kursini muvaqqiyatli
+          tugatganman.
         </p>
         <p>
-          Mening vazifam - veb-saytni foydalanuvchilar uchun qulay qilish,
-          jozibali dizayn va tezkorlikni ta’minlashdir. Maqsadim –
-          foydalanuvchilar barcha bo‘limlardan intuitiv tarzda foydalanishi
-          uchun qulay interfeys yaratishdir.
+          Men qiziqarli, ko'p funksiyalarga ega va kuchli dizaynga ega veb
+          saytlar yaratishga qiziqaman. Mening vazifam - veb-saytni
+          foydalanuvchilar uchun va interaktiv qilish, jozibali dizayn va
+          tezkorlikni ta'minlashdir. Maqsadim - foydalanuvchilar barcha
+          bo'limlardan intuitiv tarzda foydalanishi uchun qulay interfeys
+          yaratishdir.
         </p>
         <button className="call__btn">
           <a href="./projects">Loyihalar</a>
@@ -39,34 +43,42 @@ const About = () => {
       </section>
 
       <section className="soft-skills">
-         <h2>Asbob-uskunalar</h2>
+        <h2>Asbob-uskunalar</h2>
         <div className="line__block"></div>
 
         <div className="items-cards">
           <div className="item__card">
             <img src={html} alt="html icon" />
+            <div className="item__title">Html</div>
           </div>
           <div className="item__card">
-            <img src={css} alt="html icon" />
+            <img src={css} alt="css icon" />
+            <div className="item__title">Css</div>
           </div>
           <div className="item__card">
-            <img src={js} alt="html icon" />
+            <img src={js} alt="javascript icon" />
+            <div className="item__title">javascript</div>
           </div>
           <div className="item__card">
-            <img src={ant} alt="html icon" />
+            <img src={ant} alt="ant icon" />
+            <div className="item__title">Ant</div>
           </div>
           <div className="item__card">
-            <img src={figma} alt="html icon" />
+            <img src={figma} alt="figma icon" />
+            <div className="item__title">Figma</div>
           </div>
           <div className="item__card">
-            <img src={react} alt="html icon" />
+            <img src={react} alt="react icon" />
+            <div className="item__title">React</div>
           </div>
-            <div className="item__card">
-              <img src={tailwandcss} alt="html icon" />
-            </div>
-            <div className="item__card">
-              <img src={swiper} alt="html icon" />
-            </div>
+          <div className="item__card">
+            <img src={tailwandcss} alt="tailwind icon" />
+            <div className="item__title">tailwind</div>
+          </div>
+          <div className="item__card">
+            <img src={swiper} alt="swipper icon" />
+            <div className="item__title">Swiper</div>
+          </div>
         </div>
       </section>
 
