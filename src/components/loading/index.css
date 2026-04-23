@@ -1,0 +1,108 @@
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #0b0f19; /* Qorong'u background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.loading-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.2);
+  transition: background 0.1s;
+}
+
+.loading-circle::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, transparent 0 340deg, #3b82f6 360deg);
+  animation: spin 1.5s linear infinite;
+  z-index: 0;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-circle-inner {
+  width: 110px;
+  height: 110px;
+  background: #0b0f19;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.loading-percentage {
+  font-size: 32px;
+  font-weight: 800;
+  color: #fff;
+  background: linear-gradient(90deg, #60a5fa, #a78bfa);
+  -webkit-text-fill-color: transparent;
+  font-family: sans-serif;
+}
+
+.loading-message {
+  font-size: 18px;
+  color: #94a3b8;
+  margin: 0;
+  text-align: center;
+  min-height: 27px;
+  transition: all 0.4s ease;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+}
+
+.loading-message.welcome {
+  color: #4ade80; /* Yashil rang */
+  font-size: 24px;
+  transform: scale(1.1);
+  text-shadow: 0 0 15px rgba(74, 222, 128, 0.6);
+  font-weight: bold;
+}
+
+.loading-bar-container {
+  width: 280px;
+  height: 8px;
+  background: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+.loading-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  border-radius: 10px;
+  transition: width 0.1s ease-out;
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.8);
+}
