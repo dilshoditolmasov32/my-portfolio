@@ -8,7 +8,6 @@ const Loading = ({ onComplete }) => {
   useEffect(() => {
     let currentProgress = 0;
     const interval = setInterval(() => {
-      // Randomly increase progress
       currentProgress += Math.floor(Math.random() * 3) + 1;
       
       if (currentProgress >= 100) {
@@ -17,7 +16,7 @@ const Loading = ({ onComplete }) => {
         setMessage("Xush kelibsiz!");
         clearInterval(interval);
         
-        // Wait a short time to let user read "Xush kelibsiz!"
+      
         setTimeout(() => {
           onComplete();
         }, 1200);
@@ -33,7 +32,7 @@ const Loading = ({ onComplete }) => {
     <div className="loading-overlay">
       <div className="loading-container">
         
-        {/* Glowing Circle */}
+        
         <div 
           className="loading-circle" 
           style={{ background: `conic-gradient(#3b82f6 ${progress}%, #1e293b 0)` }}
@@ -43,12 +42,11 @@ const Loading = ({ onComplete }) => {
           </div>
         </div>
 
-        {/* Dynamic Text */}
+      
         <h2 className={`loading-message ${progress === 100 ? "welcome" : ""}`}>
           {message}
         </h2>
 
-        {/* Progress Bar */}
         <div className="loading-bar-container">
           <div 
             className="loading-bar-fill" 

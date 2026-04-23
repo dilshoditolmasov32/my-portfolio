@@ -154,4 +154,9 @@ header {
     display: block;
     cursor: pointer;
   }
+
+  .hamburger-menu img {
+    width: 36px;
+    height: 36px;
+  }
 }

@@ -67,6 +67,7 @@
   color: #fff;
   background: linear-gradient(90deg, #60a5fa, #a78bfa);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -78,15 +79,14 @@
   min-height: 27px;
   transition: all 0.4s ease;
   letter-spacing: 1px;
-  font-family: sans-serif;
+  font-family: "Poppins";
 }
 
 .loading-message.welcome {
-  color: #4ade80; /* Yashil rang */
+  color: rgba(57, 150, 95, 1);
   font-size: 24px;
   transform: scale(1.1);
-  text-shadow: 0 0 15px rgba(74, 222, 128, 0.6);
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .loading-bar-container {

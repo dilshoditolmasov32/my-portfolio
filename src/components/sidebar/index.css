@@ -127,17 +127,6 @@
   border-radius: 8px;
 }
 
-.sidebar_close_btn {
-  display: none;
-  background: none;
-  border: none;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  cursor: pointer;
-  z-index: 100;
-}
-
 @media screen and (max-width: 1040px) {
   .left_sidebar {
     transform: translateX(-100%);
@@ -148,8 +137,15 @@
   .left_sidebar.active {
     transform: translateX(0);
   }
-  
-  .sidebar_close_btn {
-    display: block;
-  }
+}
+
+.sidebar_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  cursor: pointer;
 }
