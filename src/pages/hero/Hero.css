@@ -6,9 +6,11 @@
   align-items: center;
   text-align: center;
 }
+
 .hero-page__block {
   max-width: 633px;
   width: 100%;
+  margin: 0 auto;
 }
 
 h1 {
@@ -66,4 +68,11 @@ p {
 }
 .about__btn:hover img {
   transform: translateX(8px);
+}
+
+
+@media screen and (max-width: 600px) {
+  .hero-page {
+    padding-top: 70px;
+  }
 }

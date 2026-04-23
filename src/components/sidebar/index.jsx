@@ -5,12 +5,21 @@ import {
   gmail,
   telegram,
 } from "../../../public/images";
+import { IoClose } from "react-icons/io5";
 import "./index.css"
-const Index = () => {
+
+const Index = ({ hamburgerMenu, setHamburgerMenu }) => {
  
   return (
     <>
-      <aside className="left_sidebar">
+      <aside className={`left_sidebar ${hamburgerMenu ? "active" : ""}`}>
+
+        <button 
+          className="sidebar_close_btn" 
+          onClick={() => setHamburgerMenu && setHamburgerMenu(false)}
+        >
+          <IoClose size={30} color="#fff" />
+        </button>
         <div className="profile_section">
           <div>
             <img
