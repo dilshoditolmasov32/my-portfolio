@@ -5,12 +5,26 @@ import {
   gmail,
   telegram,
 } from "../../../public/images";
-import "./index.css"
-const Index = () => {
+import { IoClose } from "react-icons/io5";
+
+const Index = ({ hamburgerMenu, setHamburgerMenu }) => {
  
   return (
     <>
-      <aside className="left_sidebar">
+      {/* Overlay to close sidebar on mobile */}
+      {hamburgerMenu && (
+        <div 
+          className="sidebar_overlay" 
+          onClick={() => setHamburgerMenu(false)}
+        ></div>
+      )}
+      <aside className={`left_sidebar ${hamburgerMenu ? "active" : ""}`}>
+        <button 
+          className="sidebar_close_btn" 
+          onClick={() => setHamburgerMenu(false)}
+        >
+          <IoClose size={28} color="#fff" />
+        </button>
         <div className="profile_section">
           <div>
             <img
@@ -81,8 +95,8 @@ const Index = () => {
             </div>
             <div>
               <h3>Telefon raqam</h3>
-              <a href="tel:+998937027504" target="_blank" title="+998937027504">
-                +998 (93) 702-75-04
+              <a href="tel:+998935711442" target="_blank" title="+998935711442">
+                +998 (93) 571-14-42
               </a>
             </div>
           </li>
