@@ -1,4 +1,4 @@
-import {  gmail2, phone2, telegram2 } from "../../../public/images";
+import { gmail2, phone2, telegram2 } from "../../../public/images";
 import "./Contact.css";
 const Contact = () => {
   return (
@@ -32,14 +32,16 @@ const Contact = () => {
               <img src={phone2} alt="phone icon" />
             </div>
             <h4>Phone</h4>
-            <a href="tel:+998937027504">+998 (93) 702 7504 </a>
+            <a href="tel:+998937027504">+998 (93) 571 14 42 </a>
           </div>
         </div>
       </section>
       <section className="contact__page__forma">
         <h2>So'rov yuborish</h2>
         <div className="line__block"></div>
-        <form className="input__form">
+        <form
+          className="skills-section"
+        >
           <div className="text__input">
             <div>
               <label htmlFor="#name">Ismingiz*</label> <br />

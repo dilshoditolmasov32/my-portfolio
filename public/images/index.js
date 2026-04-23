@@ -24,6 +24,12 @@ import time from "./time.svg"
 import gmail2 from "./gmail2.png"
 import telegram2 from "./telegram2.png"
 import phone2 from "./phone2.png"
+import vuejs from "./vuejs.png"
+import nuxtjs from "./nuxtjs.png"
+import typescript from "./typescript.png"
+import milliybiz from "./milliybiz.png"
+import crmadmin from "./crm-admin-panel.png"
+import ttv from "./ttv.png"
+import reytinguz from "./reyting.png"
 
-
-export {gmail, github,github2, Dilshodbey, call, telegram, leftIcon, rightIcon, refreshIcon, menuBar, next, html, css, js, react, figma, swiper, tailwandcss, ant,  webSearch,diamond, penTool, time, gmail2, telegram2, phone2  }
+export {gmail, github,github2, Dilshodbey, call, telegram, leftIcon, rightIcon, refreshIcon, menuBar, next, html, css, js, react, figma, swiper, tailwandcss, ant,  webSearch,diamond, penTool, time, gmail2, telegram2, phone2, vuejs, nuxtjs, typescript, milliybiz, crmadmin, ttv, reytinguz  }

@@ -1,5 +1,6 @@
 import { next } from "../../../public/images";
 import "./Hero.css";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -15,7 +16,7 @@ const Hero = () => {
         </p>
         <div className="button__wrapper">
           <button className="about__btn">
-          <a href="/about">Men haqimda </a>
+          <Link to="/about">Men haqimda </Link>
           <img src={next} alt="next-icon" />
         </button>
         </div>

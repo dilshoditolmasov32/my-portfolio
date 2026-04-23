@@ -3,7 +3,7 @@ import App from "../App"
 import Hero from "../pages/hero/Hero"
 import About from "../pages/about/About"
 import Contact from "../pages/contact/Contact"
-import Projects from "../pages/projects"
+import Projects from "../pages/projects/Projects"
 const Index = () => {
   const router=createBrowserRouter(
     createRoutesFromElements(

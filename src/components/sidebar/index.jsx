@@ -3,20 +3,14 @@ import {
   Dilshodbey,
   github,
   gmail,
-  leftIcon,
-  refreshIcon,
-  rightIcon,
   telegram,
 } from "../../../public/images";
 import "./index.css"
-const Index = (props) => {
+const Index = () => {
  
   return (
     <>
-
-  
       <aside className="left_sidebar">
-    
         <div className="profile_section">
           <div>
             <img
@@ -29,9 +23,9 @@ const Index = (props) => {
           <h1>Itolmasov Dilshodbek</h1>
           <div className="about_btns">
             <button>Veb Dasturchi </button>
-            <button>Talaba </button>
-            <button>Junior Developer </button>
+            <button>Frontend Developer </button>
             <button>React.Js Dasturchi </button>
+            <button>Vue.Js Dasturchi </button>
           </div>
         </div>
         <ul className="social_network_section">
@@ -57,7 +51,7 @@ const Index = (props) => {
             <div>
               <h3>Github </h3>
               <a
-                href="https://github.com/dilshoditolmasov32"
+                href="https://github.com/dilshoditolmasov32?tab=repositories"
                 target="_blank"
                 title="github.com/dilshoditolmasov32"
               >
