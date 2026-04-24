@@ -124,7 +124,8 @@ p:nth-of-type(1) {
 
 @media (max-width: 480px) {
   .hero-page {
-    padding: 0 16px;
+    padding: 0 25px;
+    margin-top: -20px;
   }
 
   h1 {

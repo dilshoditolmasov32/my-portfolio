@@ -350,3 +350,57 @@ Image wrapper
   height: 14px;
   opacity: 0.6;
 }
+
+/* ================= RESPONSIVE ================= */
+
+@media screen and (max-width: 1040px) {
+  .page {
+    margin: 20px;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .tg-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px 16px;
+  }
+
+  .tg-icon {
+    margin: 0 auto;
+  }
+
+  .tg-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .tg-megaphone {
+    display: none; /* Hide on small screens to avoid clutter */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page {
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .card-body {
+    padding: 12px;
+  }
+}

@@ -31,10 +31,10 @@ const Index = ({ hamburgerMenu, setHamburgerMenu }) => {
           </div>
           <h1>Itolmasov Dilshodbek</h1>
           <div className="about_btns">
-            <button>Veb Dasturchi </button>
-            <button>Frontend Developer </button>
-            <button>React.Js Dasturchi </button>
-            <button>Vue.Js Dasturchi </button>
+            <button>Web Developer</button>
+            <button>Frontend Developer</button>
+            <button>React Developer</button>
+            <button>Vue Developer</button>
           </div>
         </div>
         <ul className="social_network_section">
