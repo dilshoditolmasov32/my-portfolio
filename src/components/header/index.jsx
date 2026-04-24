@@ -17,7 +17,7 @@ const Header = () => {
       <header className="header">
         <div className="container">
           <div className="header_section">
-            {/* LOGO */}
+  
             <div className="header_menu">
               <NavLink to="/">
                 Developer.<span>Uz</span>

@@ -15,11 +15,7 @@ function App() {
 
   return (
     <>
-      <Toaster position="top-center" reverseOrder={false} />
-      <div className="header-page">
-        <Header />
-      </div>
-
+      <Header />
       <main className="main-page">
         <div className="sidebar">
           <Sidebar />
@@ -28,9 +24,11 @@ function App() {
           <Outlet />
         </div>
       </main>
+      <Toaster position="top-center" reverseOrder={false} />
     </>
   );
 }
 
 export default App;
+
 
