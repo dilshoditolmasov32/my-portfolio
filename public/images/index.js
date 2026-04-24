@@ -31,5 +31,6 @@ import milliybiz from "./milliybiz.png"
 import crmadmin from "./crm-admin-panel.png"
 import ttv from "./ttv.png"
 import reytinguz from "./reyting.png"
+import nextjs from "./nextjs.svg"
 
-export {gmail, github,github2, Dilshodbey, call, telegram, leftIcon, rightIcon, refreshIcon, menuBar, next, html, css, js, react, figma, swiper, tailwandcss, ant,  webSearch,diamond, penTool, time, gmail2, telegram2, phone2, vuejs, nuxtjs, typescript, milliybiz, crmadmin, ttv, reytinguz  }
+export {gmail, github,github2, Dilshodbey, call, telegram, leftIcon, rightIcon, refreshIcon, menuBar, next, html, css, js, react, figma, swiper, tailwandcss, ant,  webSearch,diamond, penTool, time, gmail2, telegram2, phone2, vuejs, nuxtjs, typescript, milliybiz, crmadmin, ttv, reytinguz, nextjs  }

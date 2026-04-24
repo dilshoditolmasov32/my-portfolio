@@ -14,7 +14,8 @@ import {
   webSearch,
   vuejs,
   typescript,
-  nuxtjs
+  nuxtjs,
+  nextjs
 } from "../../../public/images";
 import { Link } from "react-router-dom";
 import "./About.css";
@@ -28,9 +29,9 @@ const TOOLS = [
   { img: ant, label: "Ant Design", alt: "ant" },
   { img: figma, label: "Figma", alt: "figma" },
   { img: react, label: "React", alt: "react" },
-  { img: tailwandcss, label: "Tailwind", alt: "tailwind" },
+  { img: tailwandcss, label: "Tailwind CSS", alt: "tailwind" },
   { img: swiper, label: "Swiper", alt: "swiper" },
-  { img: swiper, label: "Next JS", alt: "nextjs" },
+  { img: nextjs, label: "Next JS", alt: "nextjs" },
   { img: typescript, label: "TypeScript", alt: "typescript" },
 ];
 
@@ -39,25 +40,25 @@ const SKILLS = [
     icon: webSearch,
     alt: "web",
     title: "Frontend Development",
-    desc: "React, Tailwind CSS, JavaScript, HTML/CSS yordamida saytlar yarataman.",
+    desc: "I build modern websites using React, Tailwind CSS, JavaScript, and HTML/CSS.",
   },
   {
     icon: penTool,
     alt: "pen",
-    title: "Responsive Dizayn",
-    desc: "Barcha qurilmalarda mos ishlaydigan saytlar yarataman.",
+    title: "Responsive Design",
+    desc: "I create websites that work seamlessly across all devices.",
   },
   {
     icon: diamond,
     alt: "diamond",
-    title: "Sifat",
-    desc: "Yuqori darajada saytlarni sifatli ishlab chiqish.",
+    title: "Quality",
+    desc: "I ensure high-quality development with clean and maintainable code.",
   },
   {
     icon: time,
     alt: "time",
-    title: "Tezkorlik",
-    desc: "Qisqa muddat ichida tezkor sayt ishlab chiqish.",
+    title: "Fast Delivery",
+    desc: "I deliver projects efficiently within short timeframes.",
   },
 ];
 
@@ -70,30 +71,28 @@ const SectionHeader = ({ title }) => (
 
 const About = () => (
   <div className="about-page">
-   
     <section className="bio fade-up">
-      <SectionHeader title="Men haqimda" />
+      <SectionHeader title="About Me" />
       <p>
-        Men Itolmasov Dilshodbek, Frontend React.js dasturchiman. Yoshim 22da,
-        Qashqadaryo viloyati Kasbi tumanida tug'ilganman. Hozirgi vaqtda
-        O'zbekiston Respublikasi Iqtisodiyot va Moliya Vazirligida Frontend
-        Vue.js bo'yicha amaliyot o'tamoqdaman. Najot ta'limning Frontend
-        React.js kursini muvaffaqiyatli tugatganman.
+        My name is Itolmasov Dilshodbek, and I am a Frontend React.js developer.
+        I am 22 years old and was born in Kasbi district, Kashkadarya region.
+        Currently, I am doing an internship as a Frontend Vue.js developer at
+        the Ministry of Economy and Finance of Uzbekistan. I have successfully
+        completed the Frontend React.js course at Najot Ta'lim.
       </p>
       <p>
-        Men qiziqarli, ko'p funksiyalarga ega va kuchli dizaynga ega veb saytlar
-        yaratishga qiziqaman. Maqsadim — foydalanuvchilar uchun intuitiv,
-        jozibali va tezkor interfeys yaratishdir.
+        I am passionate about building modern, feature-rich, and visually
+        appealing websites. My goal is to create intuitive, engaging, and
+        high-performance user interfaces.
       </p>
       <Link to="/projects" className="cta__btn">
-        Loyihalar
+        Projects
         <img src={next} alt="arrow" />
       </Link>
     </section>
 
-  
     <section className="tools fade-up">
-      <SectionHeader title="Asbob-uskunalar" />
+      <SectionHeader title="Tech Stack" />
       <div className="tools__grid">
         {TOOLS.map(({ img, label, alt }) => (
           <div className="tool__card" key={label}>
@@ -104,9 +103,8 @@ const About = () => (
       </div>
     </section>
 
-  
     <section className="skills fade-up">
-      <SectionHeader title="Men nimalar qila olaman" />
+      <SectionHeader title="What I Can Do" />
       <div className="skills__grid">
         {SKILLS.map(({ icon, alt, title, desc }) => (
           <div className="skill__card" key={title}>

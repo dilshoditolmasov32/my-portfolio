@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 import Header from "./components/header";
 import Sidebar from "./components/sidebar";
 import Loading from "./components/loading";
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <>
+      <Toaster position="top-center" reverseOrder={false} />
       <div className="header-page">
         <Header />
       </div>
@@ -31,3 +33,4 @@ function App() {
 }
 
 export default App;
+
