@@ -11,7 +11,7 @@ const Hero = () => {
   </h1>
 
 
-  <p>
+  <p className="user-text">
     Frontend Developer & UI/UX enthusiast focused on building modern and
     user-centered web applications.
   </p>
