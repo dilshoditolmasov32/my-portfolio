@@ -75,8 +75,14 @@ const Header = () => {
             </ul>
 
             {/* HAMBURGER */}
-            <button className="hamburger-menu" onClick={toggleMenu}>
-              <img src={menuBar} alt="menu" width={24} height={24} />
+            <button 
+              className={`hamburger-menu ${isMenuOpen ? "active" : ""}`} 
+              onClick={toggleMenu}
+              aria-label="Toggle Menu"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
             </button>
           </div>
         </div>
