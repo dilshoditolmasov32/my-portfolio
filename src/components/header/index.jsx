@@ -81,9 +81,9 @@ const Header = () => {
           </div>
         </div>
 
-        {/* SIDEBAR */}
-        <Sidebar hamburgerMenu={isMenuOpen} setHamburgerMenu={setIsMenuOpen} />
       </header>
+      {/* SIDEBAR */}
+      <Sidebar hamburgerMenu={isMenuOpen} setHamburgerMenu={setIsMenuOpen} />
     </>
   );
 };

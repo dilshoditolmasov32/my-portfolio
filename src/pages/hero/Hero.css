@@ -132,6 +132,11 @@ p:nth-of-type(1) {
   }
 
   p {
-    font-size: 14px;
+    font-size: 15px;
   }
+
+  .hero__highlights {
+  font-size: 15px;
+}
+
 }
