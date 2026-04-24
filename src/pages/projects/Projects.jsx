@@ -58,8 +58,8 @@ const projects = [
   },
   {
     id: 4,
-    title: "Mini Contact App",
-    status: "Low",
+    title: "Reyting Uz platformasi",
+    status: "Middle",
     statusColor: "#4dff91",
     image: reytinguz,
     tags: [
@@ -124,7 +124,7 @@ const ProjectsPage = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      🐙
+                      🔗
                     </a>
                   )}
                 </div>
@@ -156,7 +156,6 @@ const ProjectsPage = () => {
           ))}
         </div>
 
-        {/* Telegram Banner */}
         <div className="tg-banner">
           <div className="tg-icon">📢</div>
           <div className="tg-text">
