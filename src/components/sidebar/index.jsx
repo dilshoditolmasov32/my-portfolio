@@ -78,7 +78,7 @@ const Index = ({ hamburgerMenu, setHamburgerMenu }) => {
             <Link
               to="#"
               onClick={() =>
-                window.open("https://t.me/dilshodbek_zafarovich", "_blank")
+                window.open("https://t.me/dilshodbek_developer", "_blank")
               }
               className="social_card"
             >
@@ -87,7 +87,7 @@ const Index = ({ hamburgerMenu, setHamburgerMenu }) => {
               </div>
               <div>
                 <h3>Telegram</h3>
-                <span>t.me/dilshodbek_zafarovich</span>
+                <span>t.me/dilshodbek_developer</span>
               </div>
             </Link>
           </li>
@@ -95,7 +95,7 @@ const Index = ({ hamburgerMenu, setHamburgerMenu }) => {
           <li className="social_list">
             <Link
               to="#"
-              onClick={() => (window.location.href = "tel:+998937027504")}
+              onClick={() => (window.location.href = "tel:+998935711442")}
               className="social_card"
             >
               <div className="icon_card-4">

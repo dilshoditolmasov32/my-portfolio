@@ -118,22 +118,27 @@ const Contact = () => {
               <label htmlFor="email">Your Email*</label> <br />
               <input
                 type="email"
-                name="user_email" 
+                name="user_email"
                 id="email"
                 placeholder="example@gmail.com"
                 required
               />
             </div>
           </div>
-          <label htmlFor="textarea">Your Message*</label> <br />
-          <textarea
-            name="message" 
-            id="textarea"
-            placeholder="Write your message..."
-            rows="5"
-            cols="30"
-            required
-          ></textarea>
+          <div className="message-input">
+            <label htmlFor="textarea" className="message-label">
+              Your Message*
+            </label>{" "}
+            <br />
+            <textarea
+              name="message"
+              id="textarea"
+              placeholder="Write your message..."
+              rows="5"
+              cols="30"
+              required
+            ></textarea>
+          </div>
           <button type="submit" id="form_button" disabled={loading}>
             {loading ? "Sending..." : "Send Message"}
           </button>
